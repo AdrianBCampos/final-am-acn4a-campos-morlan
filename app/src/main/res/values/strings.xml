@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GymApp</string>
+    <string name="clases_de_spinning_n_ahora_de_lunes_a_sabado">CLASES DE SPINNING</string>
+    <string name="ahora_de_lunes_a_sabado">Ahora de lunes a sabado</string>
+    <string name="gap">GAP</string>
+    <string name="not2bis">Nueva actividad\nHacé click y conocé mas</string>
+    <string name="not3">CROSS-FIT</string>
+    <string name="not3bis">Se suman nuevos horarios de entrenamiento</string>
+
 </resources>
