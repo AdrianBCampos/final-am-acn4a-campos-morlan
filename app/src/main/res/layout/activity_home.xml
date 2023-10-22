@@ -7,6 +7,83 @@
     android:background="#EDC494"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="109dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#6E6C6C"
+        android:text="CROSSFIT HORARIOS"
+        android:textColor="#020000"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/cross2"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="50dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="109dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#6E6C6C"
+        android:text="GRILLA HORARIOS"
+        android:textColor="#020000"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/grilla"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="50dp"
+        app:iconTint="#000000"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="109dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="#6E6C6C"
+        android:text="RUTINA ONLINE"
+        android:textColor="#020000"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/gimnasio"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="50dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="109dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="#6E6C6C"
+        android:text="SPINNING HORARIOS"
+        android:textColor="#020000"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/bicicletaestatica"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="50dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -19,49 +96,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_marginBottom="7dp"
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="73dp"
+            android:layout_height="62dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/home" />
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/codqr"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="73dp"
+            android:layout_height="62dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/calendario" />
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/calendario"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginBottom="10dp"
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="73dp"
+            android:layout_height="62dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/codigoqr" />
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/codigoq"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="8dp"
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="73dp"
+            android:layout_height="62dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/sobre" />
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/correo"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
 
     </LinearLayout>
 
@@ -216,122 +289,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
-
-    <LinearLayout
-        android:layout_width="105dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
-        android:background="#6E6C6C"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            app:srcCompat="@drawable/pesas" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6E6C6C"
-            android:text="RUTINA ONLINE"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="105dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="12dp"
-        android:background="#6E6C6C"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            app:srcCompat="@drawable/bicicletaestatica" />
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6E6C6C"
-            android:text="SPINNING HORARIOS"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="105dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="135dp"
-        android:background="#6E6C6C"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            app:srcCompat="@drawable/grilla" />
-
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6E6C6C"
-            android:text="GRILLA HORARIOS"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="105dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="135dp"
-        android:background="#6E6C6C"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            app:srcCompat="@drawable/cross2" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6E6C6C"
-            android:text="CROSSFIT HORARIOS"
-            android:textSize="12sp" />
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView16"
