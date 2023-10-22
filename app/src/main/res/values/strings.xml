@@ -15,4 +15,9 @@
     <string name="btn_grilla_horarios">GRILLA HORARIOS</string>
     <string name="rutina_online">RUTINA ONLINE</string>
     <string name="otro_spinning_horarios">SPINNING HORARIOS</string>
+
+    <string name="home_click">Clink on HOME</string>
+    <string name="home">HOME</string>
+
+
 </resources>
