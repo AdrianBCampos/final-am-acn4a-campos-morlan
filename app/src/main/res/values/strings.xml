@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Clon App Gym</string>
+
+    <string name="clases_de_spinning_n_ahora_de_lunes_a_sabado">CLASES DE SPINNING</string>
+    <string name="ahora_de_lunes_a_sabado">Ahora de lunes a sabado</string>
+    <string name="gap">GAP</string>
+    <string name="not2bis">Nueva actividad\nHacé click y conocé mas</string>
+    <string name="not3">CROSS-FIT</string>
+    <string name="not3bis">Se suman nuevos horarios de entrenamiento</string>
+    <string name="grilla_horarios">GRILLA HORARIOS</string>
+    <string name="crossfit_horarios">CROSSFIT HORARIOS</string>
+    <string name="rutina_on_line">RUTINA ON-LINE</string>
+    <string name="spinning_horarios">SPINNING HORARIOS</string>
+    <string name="btn_crossfit_horarios">CROSSFIT HORARIOS</string>
+    <string name="btn_grilla_horarios">GRILLA HORARIOS</string>
+    <string name="rutina_online">RUTINA ONLINE</string>
+    <string name="otro_spinning_horarios">SPINNING HORARIOS</string>
+</resources>
