@@ -26,15 +26,25 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout contentAfiche = findViewById(R.id.contenedorBotones);
         ImageView nuevoAfiche = new ImageView(this);
         int afiche = 0;
-        afiche =(int) (Math.random()*2)+1;
+        afiche =(int) (Math.random()*4)+1;
         if (afiche ==1)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche1);
             contentAfiche.addView(nuevoAfiche);
         }
-        else
+        else if (afiche == 2)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche3);
+            contentAfiche.addView(nuevoAfiche);
+        }
+        else if (afiche == 3)
+        {
+            nuevoAfiche.setImageResource(R.drawable.afiche4);
+            contentAfiche.addView(nuevoAfiche);
+        }
+        else
+        {
+            nuevoAfiche.setImageResource(R.drawable.afiche5);
             contentAfiche.addView(nuevoAfiche);
         }
 
