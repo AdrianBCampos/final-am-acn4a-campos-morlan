@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F9E1C5"
+    android:background="#EDC494"
     tools:context=".HomeActivity">
 
     <LinearLayout
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="670dp"
-        android:background="#DECF7A"
+        android:background="#CECDC26D"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,22 +83,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="180dp"
-        android:layout_marginBottom="320dp"
-        android:background="#DFD07A"
+        android:layout_marginBottom="327dp"
+        android:background="#C6C5C362"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_width="483dp"
+            android:layout_height="206dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
             android:layout_weight="1"
             android:background="#8A8753"
             android:orientation="vertical">
@@ -108,6 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="99dp"
                 android:layout_weight="1"
+
                 app:srcCompat="@drawable/spinning" />
 
             <TextView
@@ -133,10 +134,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_width="482dp"
+            android:layout_height="206dp"
             android:layout_marginLeft="3dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
             android:background="#898653"
@@ -161,7 +162,7 @@
             <TextView
                 android:id="@+id/noticia2bis"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="49dp"
                 android:layout_weight="1"
                 android:text="@string/not2bis"
                 android:textAlignment="center"
@@ -169,10 +170,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_width="483dp"
+            android:layout_height="205dp"
             android:layout_marginLeft="3dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="#888553"
@@ -337,7 +338,7 @@
         android:layout_width="149dp"
         android:layout_height="250dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="69dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/afiche1" />
