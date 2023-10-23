@@ -3,6 +3,8 @@ package com.example.clonappgym;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -47,6 +49,54 @@ public class MainActivity extends AppCompatActivity {
             nuevoAfiche.setImageResource(R.drawable.afiche5);
             contentAfiche.addView(nuevoAfiche);
         }
+
+        ImageButton homeButton = findViewById(R.id.btn_home);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                TextView home = findViewById(R.id.home);
+                home.setText(R.string.click_home);
+                home.setBackgroundColor(+R.color.black);
+            }
+        });
+
+        ImageButton calendarButton = findViewById(R.id.btn_agendar);
+        calendarButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                TextView agenda = findViewById(R.id.home);
+                agenda.setText(R.string.click_agenda_text);
+                agenda.setBackgroundColor(+R.color.black);
+
+            }
+        });
+
+        ImageButton qrButton = findViewById(R.id.btn_qr);
+        qrButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                TextView qr = findViewById(R.id.home);
+                qr.setText(R.string.click_qr_text);
+                qr.setBackgroundColor(+R.color.black);
+
+
+
+            }
+        });
+
+        ImageButton msgButton = findViewById(R.id.btn_correo);
+        msgButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                TextView correo = findViewById(R.id.home);
+                correo.setText(R.string.click_contact_text);
+                correo.setBackgroundColor(+R.color.black);
+
+
+
+            }
+        });
 
 
 

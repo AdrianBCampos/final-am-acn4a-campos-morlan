@@ -16,8 +16,18 @@
     <string name="rutina_online">RUTINA ONLINE</string>
     <string name="otro_spinning_horarios">SPINNING HORARIOS</string>
 
-    <string name="home_click">Clink on HOME</string>
+    <string name="click_home">Click on HOME</string>
     <string name="home">HOME</string>
+
+
+
+
+    <string name="agenda">AGENDA CLONE</string>
+    <string name="click_agenda_text">Click on SHIFTS</string>
+    <string name="qr">QR CLONE</string>
+    <string name="click_qr_text">Click on QR</string>
+    <string name="contact">HOME CONTACT</string>
+    <string name="click_contact_text">Click on CONTACT</string>
 
 
 </resources>
