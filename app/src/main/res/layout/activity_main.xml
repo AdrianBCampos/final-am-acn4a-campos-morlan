@@ -220,26 +220,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-            android:id="@+id/btn_spinningHorarios"
-            android:layout_width="109dp"
-            android:layout_height="121dp"
-            android:layout_marginStart="124dp"
-            android:layout_marginBottom="196dp"
-            android:backgroundTint="#6E6C6C"
-            android:text="@string/spinning_horarios"
-            android:textColor="#020000"
-            android:textSize="12sp"
-            app:cornerRadius="0dp"
-            app:icon="@drawable/bicicletaestatica"
-            app:iconGravity="top"
-            app:iconPadding="5dp"
-            app:iconSize="50dp"
-            app:iconTint="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-
 
     <Button
         android:id="@+id/button9"
@@ -257,26 +237,6 @@
         app:iconPadding="5dp"
         app:iconSize="50dp"
         app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="109dp"
-        android:layout_height="121dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="72dp"
-        android:backgroundTint="#6E6C6C"
-        android:text="@string/btn_grilla_horarios"
-        android:textColor="#020000"
-        android:textSize="12sp"
-        app:cornerRadius="0dp"
-        app:icon="@drawable/grilla"
-        app:iconGravity="top"
-        app:iconPadding="5dp"
-        app:iconSize="50dp"
-        app:iconTint="#000000"
-        app:iconTintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
