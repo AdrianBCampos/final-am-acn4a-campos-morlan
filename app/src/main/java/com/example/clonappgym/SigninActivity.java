@@ -14,7 +14,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Signin extends AppCompatActivity {
+public class SigninActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
@@ -58,7 +58,7 @@ public class Signin extends AppCompatActivity {
     }
 
     public void volver (View v){
-        Intent intent = new Intent(getApplicationContext(), Login.class);
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
     }
 }

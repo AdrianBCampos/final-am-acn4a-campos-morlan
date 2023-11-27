@@ -13,10 +13,10 @@
         android:theme="@style/Theme.ClonAppGym"
         tools:targetApi="34">
         <activity
-            android:name=".Signin"
+            android:name=".SigninActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
