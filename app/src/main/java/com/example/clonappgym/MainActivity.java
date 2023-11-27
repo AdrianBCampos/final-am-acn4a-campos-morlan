@@ -1,20 +1,38 @@
 package com.example.clonappgym;
 
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
 
         //LinearLayout contentNews = findViewById(R.id.contenedorBotones);
         //TextView nuevaPublicacion = new TextView(this);
@@ -69,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 agenda.setText(R.string.click_agenda_text);
                 agenda.setBackgroundColor(+R.color.black);
 
+
             }
         });
 
@@ -93,13 +112,30 @@ public class MainActivity extends AppCompatActivity {
                 correo.setText(R.string.click_contact_text);
                 correo.setBackgroundColor(+R.color.black);
 
-
-
             }
         });
+    }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            String email= currentUser.getEmail();
+            Log.i("firebase email", email);
+        } else {
+            Log.i("firebase email", "No hay usuario");
+            Intent intent = new Intent(getApplicationContext(), Login.class);
+            startActivity(intent);
+            //this.login("dami@gmail.com", "123456");
+        }
+    }
 
+    public void logout (View v){
+        mAuth.signOut();
 
-
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        startActivity(intent);
     }
 }

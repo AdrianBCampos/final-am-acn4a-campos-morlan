@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondop"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/naranjasuave"
     tools:context=".MainActivity">
-
 
 
     <ImageView
@@ -15,9 +15,9 @@
         android:layout_height="68dp"
         android:layout_marginStart="22dp"
         android:layout_marginTop="10dp"
+        android:contentDescription="Esta imagen representa al menu hamburguesa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="Esta imagen representa al menu hamburguesa"
         app:srcCompat="@drawable/menu" />
 
     <ImageView
@@ -25,12 +25,12 @@
         android:layout_width="231dp"
         android:layout_height="150dp"
         android:layout_marginBottom="548dp"
+        android:contentDescription="Logo del gimnasio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.413"
-        android:contentDescription="Logo del gimnasio"
         app:srcCompat="@drawable/logogym" />
 
     <LinearLayout
@@ -51,9 +51,9 @@
         <LinearLayout
             android:layout_width="483dp"
             android:layout_height="206dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:background="#8A8753"
             android:orientation="vertical">
@@ -130,9 +130,9 @@
         <LinearLayout
             android:layout_width="483dp"
             android:layout_height="205dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="3dp"
             android:layout_weight="1"
             android:background="#888553"
             android:orientation="vertical">
@@ -183,44 +183,44 @@
         tools:layout_constraintTop_toBottomOf="@id/linearLayout2"></LinearLayout>
 
 
-        <Button
-            android:id="@+id/btn_CrossHorarios"
-            android:layout_width="111dp"
-            android:layout_height="121dp"
-            android:layout_marginStart="124dp"
-            android:layout_marginBottom="72dp"
-            android:backgroundTint="#6E6C6C"
-            android:text="@string/crossfit_horarios"
-            android:textColor="#020000"
-            android:textSize="12sp"
-            app:cornerRadius="0dp"
-            app:icon="@drawable/cross2"
-            app:iconGravity="top"
-            app:iconPadding="5dp"
-            app:iconSize="50dp"
-            app:iconTint="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btn_CrossHorarios"
+        android:layout_width="111dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#6E6C6C"
+        android:text="@string/crossfit_horarios"
+        android:textColor="#020000"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/cross2"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="50dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/btn_grillaHorarios"
-            android:layout_width="109dp"
-            android:layout_height="121dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="72dp"
-            android:backgroundTint="#6E6C6C"
-            android:text="@string/grilla_horarios"
-            android:textColor="#020000"
-            android:textSize="12sp"
-            app:cornerRadius="0dp"
-            app:icon="@drawable/grilla"
-            app:iconGravity="top"
-            app:iconPadding="5dp"
-            app:iconSize="50dp"
-            app:iconTint="#000000"
-            app:iconTintMode="add"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btn_grillaHorarios"
+        android:layout_width="109dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#6E6C6C"
+        android:text="@string/grilla_horarios"
+        android:textColor="#020000"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/grilla"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="50dp"
+        app:iconTint="#000000"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
@@ -362,6 +362,22 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/cerrarsesion"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="@color/verdeclaro"
+        android:onClick="logout"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        tools:layout_editor_absoluteY="10dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
