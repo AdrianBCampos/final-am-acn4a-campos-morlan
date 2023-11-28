@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HorarioSpinningActivity">
+
+    <TextView
+        android:id="@+id/horariosSpinning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/hs_spinning"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:layout_width="363dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horariosSpinning">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FDD835">
+
+                <TextView
+                    android:id="@+id/LunesSpinning"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="LUNES"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/martesSpinning"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="MARTES"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/miercolesSpinning"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="MIERCOLES"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/juevesSpinning"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="JUEVES"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viernesSpinning"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="VIERNES"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sabadoSpinning"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="SABADO"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/hsLun1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="9:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsMart1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:lines="@integer/material_motion_duration_medium_2"
+                    android:text="8:00 a 9:30"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsMier1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:lines="@integer/google_play_services_version"
+                    android:text="9:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsJue1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="8:00 a 9:30"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsVier1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="9:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsSab1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="9:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/hsLun2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="12:00 a 13:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsMar3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="14:00 a 15:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsMier3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="12:00 a 13:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsJue3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="14:00 a 15:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsVier3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="12:00 a 13:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsSab3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="14:00 a 15:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="690dp"
+        android:layout_marginBottom="1dp"
+        android:background="#CECDC26D"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contenedorBotones">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="73dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/codqr"
+
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageButton
+            android:id="@+id/btn_agendar"
+            android:layout_width="73dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/calendario"
+
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageButton
+            android:id="@+id/btn_qr"
+            android:layout_width="73dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/codigoq"
+
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageButton
+            android:id="@+id/btn_correo"
+            android:layout_width="73dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#CECDC26D"
+            app:srcCompat="@mipmap/correo"
+
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

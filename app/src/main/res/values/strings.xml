@@ -26,6 +26,7 @@
     <string name="click_qr_text">Click on QR</string>
     <string name="contact">HOME CONTACT</string>
     <string name="click_contact_text">Click on CONTACT</string>
+    <string name="hs_spinning">Horarios clases de Spinning</string>
 
 
 </resources>

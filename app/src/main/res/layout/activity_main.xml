@@ -268,6 +268,7 @@
         android:layout_marginStart="124dp"
         android:layout_marginBottom="196dp"
         android:backgroundTint="#6E6C6C"
+        android:onClick="horarioSpinning"
         android:text="@string/otro_spinning_horarios"
         android:textColor="#020000"
         android:textSize="12sp"

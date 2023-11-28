@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ClonAppGym"
         tools:targetApi="34">
         <activity
+            android:name=".HorarioSpinningActivity"
+            android:exported="false" />
+        <activity
             android:name=".SigninActivity"
             android:exported="false" />
         <activity
