@@ -168,6 +168,72 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/hsMar2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="14:00 a 15:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsMier2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="12:00 a 13:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsJue2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="14:00 a 15:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsVier2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="12:00 a 13:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hsSab2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="14:00 a 15:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/hsLun3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#886FD1C9"
+                    android:gravity="center_vertical"
+                    android:text="12:00 a 13:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
                     android:id="@+id/hsMar3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
@@ -216,7 +282,6 @@
                     android:text="14:00 a 15:00"
                     android:textAlignment="center"
                     android:textSize="16sp" />
-
             </TableRow>
 
         </TableLayout>
