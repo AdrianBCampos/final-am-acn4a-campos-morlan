@@ -135,6 +135,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void horarioSpinning(View v){
         Intent intent = new Intent(getApplicationContext(), HorarioSpinningActivity.class);
+        String newInfo = "Ahora tenes clases de Spinning todos los dias!!!";
+        intent.putExtra("newInfo", newInfo);
+
         startActivity(intent);
     }
 }
