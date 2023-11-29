@@ -32,12 +32,11 @@
         tools:ignore="RtlCompat" />
 
     <HorizontalScrollView
+        android:id="@+id/scrollH"
         android:layout_width="380dp"
-        android:layout_height="280dp"
+        android:layout_height="290dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horariosSpinning">
 
@@ -62,8 +61,8 @@
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/amarillo"
-                    android:text="@string/lunes"
                     android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/lunes"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -74,8 +73,8 @@
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/amarillo"
-                    android:text="@string/martes"
                     android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/martes"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -86,8 +85,8 @@
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/amarillo"
-                    android:text="@string/miercoles"
                     android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/miercoles"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -98,8 +97,8 @@
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/amarillo"
-                    android:text="@string/jueves"
                     android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/jueves"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -110,8 +109,8 @@
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/amarillo"
-                    android:text="@string/viernes"
                     android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/viernes"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -122,8 +121,8 @@
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="2dp"
                     android:background="@color/amarillo"
-                    android:text="@string/sabado"
                     android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/sabado"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -541,8 +540,18 @@
     </HorizontalScrollView>
 
 
+    <LinearLayout
+        android:id="@+id/newInfoContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollH">
 
-
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayoutFooter"
@@ -610,4 +619,17 @@
             tools:layout_editor_absoluteY="110dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/newInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollH" />
 </androidx.constraintlayout.widget.ConstraintLayout>

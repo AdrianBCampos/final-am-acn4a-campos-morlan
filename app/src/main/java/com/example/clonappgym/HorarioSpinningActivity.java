@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class HorarioSpinningActivity extends AppCompatActivity {
 
@@ -17,8 +18,22 @@ public class HorarioSpinningActivity extends AppCompatActivity {
 
         Intent intent = this.getIntent();
         if(intent.hasExtra("newInfo")){
-            Log.i("TAG", "onCreate: recibimos extra");
+
+            // Obtener el mensaje del Intent
+            String newInfoMessage = intent.getStringExtra("newInfo");
+
+            // Obtener referencia al TextView en tu diseño
+            TextView newInfoTextView = findViewById(R.id.newInfo);
+
+            // Establecer el mensaje en el TextView
+            newInfoTextView.setText(newInfoMessage);
+
+            // Para verificar en el Logcat
+            Log.i("TAG", "onCreate: recibimos extra con mensaje: " + newInfoMessage);
+
+
         }
+
 
 
     }
