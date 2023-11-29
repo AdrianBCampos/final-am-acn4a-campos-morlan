@@ -4,43 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HorarioSpinningActivity">
+    tools:context=".HorarioSpinningActivity"
+    android:background="@color/naranjasuave">
 
     <TextView
         android:id="@+id/horariosSpinning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+
+
+        android:background="@color/black"
+        android:contentDescription="@string/titulo_horario_spinning"
+        android:foregroundGravity="center"
+        android:gravity="top|fill_vertical"
         android:text="@string/hs_spinning"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
 
     <HorizontalScrollView
-        android:layout_width="363dp"
-        android:layout_height="466dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horariosSpinning">
+
 
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FDD835">
+                android:background="@color/black">
 
                 <TextView
                     android:id="@+id/LunesSpinning"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="LUNES"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:text="@string/lunes"
+                    android:contentDescription="@string/dia_semana_text"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -48,7 +71,11 @@
                     android:id="@+id/martesSpinning"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="MARTES"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:text="@string/martes"
+                    android:contentDescription="@string/dia_semana_text"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -56,7 +83,11 @@
                     android:id="@+id/miercolesSpinning"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="MIERCOLES"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:text="@string/miercoles"
+                    android:contentDescription="@string/dia_semana_text"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -64,7 +95,11 @@
                     android:id="@+id/juevesSpinning"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="JUEVES"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:text="@string/jueves"
+                    android:contentDescription="@string/dia_semana_text"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -72,7 +107,11 @@
                     android:id="@+id/viernesSpinning"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="VIERNES"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:text="@string/viernes"
+                    android:contentDescription="@string/dia_semana_text"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -80,209 +119,423 @@
                     android:id="@+id/sabadoSpinning"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="SABADO"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/amarillo"
+                    android:text="@string/sabado"
+                    android:contentDescription="@string/dia_semana_text"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
             </TableRow>
 
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/black">
 
                 <TextView
                     android:id="@+id/hsLun1"
                     android:layout_width="100dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="9:00 a 10:00"
+                    android:text="@string/_9_00_a_10_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsMart1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
                     android:lines="@integer/material_motion_duration_medium_2"
-                    android:text="8:00 a 9:30"
+                    android:text="@string/_8_00_a_9_30"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsMier1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
                     android:lines="@integer/google_play_services_version"
-                    android:text="9:00 a 10:00"
+                    android:text="@string/_9_00_a_10_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsJue1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="8:00 a 9:30"
+                    android:text="@string/_8_00_a_9_30"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsVier1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="9:00 a 10:00"
+                    android:text="@string/_9_00_a_10_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsSab1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="9:00 a 10:00"
+                    android:text="@string/_9_00_a_10_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
             </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/black">
 
                 <TextView
                     android:id="@+id/hsLun2"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="12:00 a 13:00"
+                    android:text="@string/_12_00_a_13_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsMar2"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="14:00 a 15:00"
+                    android:text="@string/_14_00_a_15_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsMier2"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="12:00 a 13:00"
+                    android:text="@string/_12_00_a_13_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsJue2"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="14:00 a 15:00"
+                    android:text="@string/_14_00_a_15_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsVier2"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="12:00 a 13:00"
+                    android:text="@string/_12_00_a_13_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsSab2"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="14:00 a 15:00"
+                    android:text="@string/_14_00_a_15_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
             </TableRow>
 
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:background="@color/black">
 
                 <TextView
                     android:id="@+id/hsLun3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="12:00 a 13:00"
+                    android:text="@string/_18_00_a_19_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsMar3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="14:00 a 15:00"
+                    android:text="@string/_18_00_a_19_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsMier3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="12:00 a 13:00"
+                    android:text="@string/_18_00_a_19_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsJue3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="14:00 a 15:00"
+                    android:text="@string/_18_00_a_19_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsVier3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="12:00 a 13:00"
+                    android:text="@string/_18_00_a_19_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/hsSab3"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:background="#886FD1C9"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
                     android:gravity="center_vertical"
-                    android:text="14:00 a 15:00"
+                    android:text="@string/_18_00_a_19_00"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
             </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/hsLun4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMar4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_00_a_21_00"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMier4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsJue4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_00_a_21_00"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsVier4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsSab4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
 
         </TableLayout>
     </HorizontalScrollView>
@@ -298,7 +551,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contenedorBotones">
+        app:layout_constraintTop_toBottomOf="@id/contenedorBotones"
+        tools:ignore="NotSibling">
 
         <ImageButton
             android:id="@+id/btn_home"
@@ -307,6 +561,8 @@
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
             app:srcCompat="@mipmap/codqr"
+            android:contentDescription="@string/imagen_home"
+
 
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
@@ -318,6 +574,8 @@
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
             app:srcCompat="@mipmap/calendario"
+            android:contentDescription="@string/imagen_calendario"
+
 
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
@@ -329,17 +587,20 @@
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
             app:srcCompat="@mipmap/codigoq"
+            android:contentDescription="@string/imagen_qr"
+
 
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
 
         <ImageButton
             android:id="@+id/btn_correo"
-            android:layout_width="73dp"
+            android:layout_width="121dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
             app:srcCompat="@mipmap/correo"
+            android:contentDescription="@string/imagen_sobre"
 
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />

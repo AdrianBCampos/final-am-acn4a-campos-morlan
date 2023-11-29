@@ -27,6 +27,26 @@
     <string name="contact">HOME CONTACT</string>
     <string name="click_contact_text">Click on CONTACT</string>
     <string name="hs_spinning">Horarios clases de Spinning</string>
+    <string name="lunes">LUNES</string>
+    <string name="martes">MARTES</string>
+    <string name="miercoles">MIERCOLES</string>
+    <string name="jueves">JUEVES</string>
+    <string name="viernes">VIERNES</string>
+    <string name="sabado">SABADO</string>
+    <string name="_9_00_a_10_00">9:00 a 10:00</string>
+    <string name="_8_00_a_9_30">8:00 a 9:30</string>
+    <string name="_12_00_a_13_00">12:00 a 13:00</string>
+    <string name="_14_00_a_15_00">14:00 a 15:00</string>
+    <string name="_18_00_a_19_00">18:00 a 19:00</string>
+    <string name="_20_30_a_22_00">20:30 a 22:00</string>
+    <string name="_20_00_a_21_00">20:00 a 21:00</string>
+    <string name="imagen_sobre">imagen_sobre</string>
+    <string name="imagen_qr">imagen_qr</string>
+    <string name="imagen_calendario">imagen_calendario</string>
+    <string name="imagen_home">imagen_home</string>
+    <string name="dia_semana_text">dia_semana_text</string>
+    <string name="horario_text">horario_text</string>
+    <string name="titulo_horario_spinning">titulo_horario_spinning</string>
 
 
 </resources>
