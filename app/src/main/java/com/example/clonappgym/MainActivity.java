@@ -153,6 +153,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void loadImage(View v){
+        String urlqr ="https://raw.githubusercontent.com/AdrianBCampos/imagenes/main/Codigo-qr.png";
+        Log.i("Testing",urlqr);
+
+    }
 
 
 

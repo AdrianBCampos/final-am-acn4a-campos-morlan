@@ -280,11 +280,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/codigoq"
+            android:contentDescription="TODO"
 
+
+            android:onClick="loadImage"
+            app:srcCompat="@mipmap/codigoq"
             tools:layout_editor_absoluteX="121dp"
-            tools:layout_editor_absoluteY="110dp"
-            android:contentDescription="TODO" />
+            tools:layout_editor_absoluteY="110dp" />
 
         <ImageButton
             android:id="@+id/btn_correo"
