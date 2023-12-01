@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HorarioSpinningActivity"
-    android:background="@color/naranjasuave">
+    android:background="@color/naranjasuave"
+    tools:context=".HorarioSpinningActivity">
 
     <TextView
         android:id="@+id/horariosSpinning"
@@ -573,8 +573,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/codqr"
             android:contentDescription="@string/imagen_home"
+            app:srcCompat="@mipmap/codqr"
 
 
             tools:layout_editor_absoluteX="121dp"
@@ -586,8 +586,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/calendario"
             android:contentDescription="@string/imagen_calendario"
+            app:srcCompat="@mipmap/calendario"
 
 
             tools:layout_editor_absoluteX="121dp"
@@ -599,8 +599,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/codigoq"
             android:contentDescription="@string/imagen_qr"
+            app:srcCompat="@mipmap/codigoq"
 
 
             tools:layout_editor_absoluteX="121dp"
@@ -612,8 +612,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/correo"
             android:contentDescription="@string/imagen_sobre"
+            app:srcCompat="@mipmap/correo"
 
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
