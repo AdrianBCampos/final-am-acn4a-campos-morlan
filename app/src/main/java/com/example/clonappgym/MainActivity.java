@@ -37,30 +37,41 @@ public class MainActivity extends AppCompatActivity {
         //contentNews.addView(nuevaPublicacion);
         //contentNews.addView(otraPublicacion);
 
-        LinearLayout contentAfiche = findViewById(R.id.contenedorBotones);
+        LinearLayout contentAfiche = findViewById(R.id.BannerConteiner);
         ImageView nuevoAfiche = new ImageView(this);
         int afiche = 0;
         afiche =(int) (Math.random()*4)+1;
         if (afiche ==1)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche1);
-            contentAfiche.addView(nuevoAfiche);
+
         }
         else if (afiche == 2)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche3);
-            contentAfiche.addView(nuevoAfiche);
+
         }
         else if (afiche == 3)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche4);
-            contentAfiche.addView(nuevoAfiche);
+
         }
         else
         {
             nuevoAfiche.setImageResource(R.drawable.afiche5);
-            contentAfiche.addView(nuevoAfiche);
+
         }
+
+        // Configurar los parámetros de diseño para ajustar la imagen al tamaño del LinearLayout
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT
+        );
+        nuevoAfiche.setLayoutParams(layoutParams);
+
+// Añadir la imagen al LinearLayout
+        contentAfiche.addView(nuevoAfiche);
+
 
         ImageButton homeButton = findViewById(R.id.btn_home);
         homeButton.setOnClickListener(new View.OnClickListener() {

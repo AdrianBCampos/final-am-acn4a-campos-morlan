@@ -8,7 +8,7 @@
     <string name="not3">CROSS-FIT</string>
     <string name="not3bis">Se suman nuevos horarios de entrenamiento</string>
     <string name="grilla_horarios">GRILLA HORARIOS</string>
-    <string name="crossfit_horarios">CROSSFIT HORARIOS</string>
+    <string name="api_fitness">CONSEJOS ENTRENAMIENTO</string>
     <string name="rutina_on_line">RUTINA ON-LINE</string>
     <string name="spinning_horarios">SPINNING HORARIOS</string>
     <string name="btn_crossfit_horarios">CROSSFIT HORARIOS</string>
