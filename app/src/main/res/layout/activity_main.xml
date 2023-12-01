@@ -8,52 +8,40 @@
     android:background="@color/naranjasuave"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/cerrarsesion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/verdellamativo"
-        android:onClick="logout"
-        android:text="@string/exit"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:cornerRadius="10dp"
-        app:iconPadding="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UsingOnClickInXml" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="46dp"
         android:layout_height="58dp"
-        android:layout_marginStart="8dp"
         android:contentDescription="Esta imagen representa al menu hamburguesa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="5dp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="231dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="548dp"
-        android:contentDescription="Logo del gimnasio"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413"
-        app:srcCompat="@drawable/logogym" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:contentDescription="Logo del gimnasio"
+            android:onClick="logout"
+            app:srcCompat="@drawable/logogym" />
+
+    </LinearLayout>
 
     <HorizontalScrollView
         android:id="@+id/scroll1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,6 +72,7 @@
                     android:layout_height="99dp"
                     android:layout_weight="5"
                     android:contentDescription="spinnignImg"
+                    android:onClick="horarioSpinning"
                     app:srcCompat="@drawable/spinningapp" />
 
 
@@ -222,7 +211,7 @@
 
 
                     android:backgroundTint="@color/gristopo"
-                    android:text="@string/grilla_horarios"
+                    android:text="@string/btn_crossfit_horarios"
                     android:textColor="#020000"
                     android:textSize="9sp"
                     app:cornerRadius="10dp"
@@ -269,8 +258,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/codqr"
 
+            app:srcCompat="@mipmap/codqr"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
 
@@ -320,19 +309,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
-            android:id="@+id/home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home"
-            android:textAlignment="textStart"
-            android:textAllCaps="true"
-            android:textColor="#040303"
-            android:textSize="8sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/cerrarSesion_btn"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/verdellamativo"
+        android:onClick="logout"
+        android:text="EXIT"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

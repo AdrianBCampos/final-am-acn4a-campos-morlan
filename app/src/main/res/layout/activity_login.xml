@@ -20,7 +20,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:cornerRadius="15dp"
+        app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/login"
         app:layout_constraintTop_toBottomOf="@+id/pass" />
@@ -38,7 +38,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:cornerRadius="15dp"
+        app:cornerRadius="0dp"
         app:layout_constraintEnd_toStartOf="@+id/login4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass" />
@@ -62,7 +62,6 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:shadowRadius="@dimen/cardview_default_elevation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +75,6 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:shadowRadius="@dimen/cardview_default_elevation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"

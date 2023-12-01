@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -44,36 +47,28 @@ public class MainActivity extends AppCompatActivity {
         if (afiche ==1)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche1);
-
+            contentAfiche.addView(nuevoAfiche);
         }
         else if (afiche == 2)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche3);
-
+            contentAfiche.addView(nuevoAfiche);
         }
         else if (afiche == 3)
         {
             nuevoAfiche.setImageResource(R.drawable.afiche4);
-
+            contentAfiche.addView(nuevoAfiche);
         }
         else
         {
             nuevoAfiche.setImageResource(R.drawable.afiche5);
-
+            contentAfiche.addView(nuevoAfiche);
         }
 
-        // Configurar los parámetros de diseño para ajustar la imagen al tamaño del LinearLayout
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT
-        );
-        nuevoAfiche.setLayoutParams(layoutParams);
-
-// Añadir la imagen al LinearLayout
-        contentAfiche.addView(nuevoAfiche);
 
 
-        ImageButton homeButton = findViewById(R.id.btn_home);
+
+        /*ImageButton homeButton = findViewById(R.id.btn_home);
         homeButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -118,10 +113,10 @@ public class MainActivity extends AppCompatActivity {
                 correo.setBackgroundColor(+R.color.black);
 
             }
-        });
+        });*/
     }
 
-    @Override
+   @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -151,4 +146,14 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void paginaPrincipal(View v){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+        startActivity(intent);
+    }
+
+
+
+
 }
