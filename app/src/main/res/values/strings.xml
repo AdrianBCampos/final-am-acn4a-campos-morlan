@@ -47,6 +47,7 @@
     <string name="dia_semana_text">dia_semana_text</string>
     <string name="horario_text">horario_text</string>
     <string name="titulo_horario_spinning">titulo_horario_spinning</string>
+    <string name="exit">Exit</string>
 
 
 </resources>

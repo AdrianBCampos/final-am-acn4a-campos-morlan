@@ -13,23 +13,24 @@
         android:id="@+id/cerrarsesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/verdeclaro"
+        android:backgroundTint="@color/verdellamativo"
         android:onClick="logout"
-        android:text="Exit"
+        android:text="@string/exit"
         android:textColor="@color/black"
-        android:textSize="8sp"
-        app:cornerRadius="0dp"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconPadding="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="56dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="46dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
         android:contentDescription="Esta imagen representa al menu hamburguesa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -168,7 +169,7 @@
                     app:iconTint="#000000" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/button3"
                     android:layout_width="109dp"
                     android:layout_height="121dp"
 
@@ -293,7 +294,8 @@
             app:srcCompat="@mipmap/codigoq"
 
             tools:layout_editor_absoluteX="121dp"
-            tools:layout_editor_absoluteY="110dp" />
+            tools:layout_editor_absoluteY="110dp"
+            android:contentDescription="TODO" />
 
         <ImageButton
             android:id="@+id/btn_correo"
