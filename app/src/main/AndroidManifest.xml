@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ClonAppGym"
         tools:targetApi="34">
         <activity
+            android:name=".activity_horario_crossfit"
+            android:exported="false" />
+        <activity
+            android:name=".activity_qr_view"
+            android:exported="false" />
+        <activity
             android:name=".HorarioSpinningActivity"
             android:exported="false" />
         <activity

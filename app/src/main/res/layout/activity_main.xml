@@ -283,7 +283,7 @@
             android:contentDescription="TODO"
 
 
-            android:onClick="loadImage"
+            android:onClick="obtenerIngresoQr"
             app:srcCompat="@mipmap/codigoq"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />

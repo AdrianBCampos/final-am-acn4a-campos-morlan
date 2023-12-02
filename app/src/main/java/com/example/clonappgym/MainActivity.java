@@ -154,9 +154,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadImage(View v){
+        ImageView imageView = findViewById(R.id.imageQR);
         String urlqr ="https://raw.githubusercontent.com/AdrianBCampos/imagenes/main/Codigo-qr.png";
         Log.i("Testing",urlqr);
+        Downloader descarga = new Downloader(imageView);
+        descarga.execute(urlqr);
 
+
+    }
+    public void obtenerIngresoQr(View v){
+        Intent intent = new Intent (getApplicationContext(), activity_qr_view.class);
+        startActivity(intent);
     }
 
 
