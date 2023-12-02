@@ -10,13 +10,13 @@
         android:id="@+id/obtenerQR_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="195dp"
+        android:layout_marginTop="620dp"
         android:backgroundTint="@color/black"
         android:onClick="paginaPrincipal"
         android:text="Volver al menú principal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obtenerQR_btn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageQR"
