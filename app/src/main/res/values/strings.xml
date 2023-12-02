@@ -48,6 +48,7 @@
     <string name="horario_text">horario_text</string>
     <string name="titulo_horario_spinning">titulo_horario_spinning</string>
     <string name="exit">Exit</string>
+    <string name="este_es_tu_c_digo_qr_para_ingresar_al_gym">ESTE ES TU CÓDIGO QR PARA INGRESAR AL GYM</string>
 
 
 </resources>

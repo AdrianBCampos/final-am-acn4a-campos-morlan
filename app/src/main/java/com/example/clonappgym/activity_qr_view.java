@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -34,6 +35,11 @@ public class activity_qr_view extends AppCompatActivity {
         Log.i("Testing",urlqr);
         Downloader descarga = new Downloader(imageView);
         descarga.execute(urlqr);
+        TextView msj = findViewById(R.id.text_qr_activity);
+        msj.setText(R.string.este_es_tu_c_digo_qr_para_ingresar_al_gym);
+        msj.setBackgroundColor(+R.color.black);
+
+
 
     }
 
