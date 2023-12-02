@@ -10,7 +10,7 @@
         android:id="@+id/obtenerQR_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="195dp"
         android:backgroundTint="@color/black"
         android:onClick="paginaPrincipal"
         android:text="Volver al menú principal"
@@ -22,7 +22,7 @@
         android:id="@+id/imageQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="121dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,12 +31,13 @@
 
     <TextView
         android:id="@+id/text_qr_activity"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:text="(Hacé click en el botón para obtener tu codigo QR )"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageQR" />
 
@@ -45,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="83dp"
+        android:backgroundTint="@color/verdellamativo"
         android:onClick="loadImage"
         android:text="Obtener mi código QR"
         android:textSize="20dp"
