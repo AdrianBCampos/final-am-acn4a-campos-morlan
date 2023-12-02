@@ -6,14 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -141,8 +136,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void horarioSpinning(View v){
         Intent intent = new Intent(getApplicationContext(), HorarioSpinningActivity.class);
-        String newInfo = "¡¡¡Ahora tenes clases de Spinning todos los dias!!!";
+        String newInfo = getString(R.string.ahora_tenes_clases_de_spinning_todos_los_dias);
         intent.putExtra("newInfo", newInfo);
+
+        startActivity(intent);
+    }
+
+    public void horarioCrossfit(View v){
+        Intent intent = new Intent(getApplicationContext(), HorarioCrossFitActivity.class);
+        String newInfo = getString(R.string.veni_a_cross_fit_a_desafiar_tus_l_mites);
+        intent.putExtra("newInfoCross", newInfo);
 
         startActivity(intent);
     }
@@ -155,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void obtenerIngresoQr(View v){
-        Intent intent = new Intent (getApplicationContext(), activity_qr_view.class);
+        Intent intent = new Intent (getApplicationContext(), QrViewActivity.class);
         startActivity(intent);
     }
 

@@ -1,7 +1,5 @@
 package com.example.clonappgym;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,18 +8,18 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-public class HorarioSpinningActivity extends AppCompatActivity {
+public class HorarioCrossFitActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_horario_spinning);
+        setContentView(R.layout.activity_horario_crossfit);
 
         Intent intent = this.getIntent();
-        if(intent.hasExtra("newInfo")){
+        if (intent.hasExtra("newInfoCross")) {
 
             // Obtener el mensaje del Intent
-            String newInfoMessage = intent.getStringExtra("newInfo");
+            String newInfoMessage = intent.getStringExtra("newInfoCross");
 
             // Obtener referencia al TextView en tu diseño
             TextView newInfoTextView = findViewById(R.id.newInfoCross);
@@ -32,11 +30,7 @@ public class HorarioSpinningActivity extends AppCompatActivity {
             // Para verificar en el Logcat
             Log.i("TAG", "onCreate: recibimos extra con mensaje: " + newInfoMessage);
 
-
         }
-
-
-
     }
 
     public void paginaPrincipal(View v){
@@ -50,6 +44,7 @@ public class HorarioSpinningActivity extends AppCompatActivity {
         Intent intent = new Intent (getApplicationContext(), QrViewActivity.class);
         startActivity(intent);
     }
+
 
 
 }

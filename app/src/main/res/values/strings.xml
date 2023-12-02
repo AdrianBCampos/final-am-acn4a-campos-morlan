@@ -49,6 +49,12 @@
     <string name="titulo_horario_spinning">titulo_horario_spinning</string>
     <string name="exit">Exit</string>
     <string name="este_es_tu_c_digo_qr_para_ingresar_al_gym">ESTE ES TU CÓDIGO QR PARA INGRESAR AL GYM</string>
+    <string name="horarios_de_cross_fit">Horarios de cross-fit</string>
+    <string name="titulo_horario_cross_fit">titulo_horario_cross-fit</string>
+    <string name="_7_00_a_8_30">7:00 a 8:30</string>
+    <string name="_7_30_a_9_00">7:30 a 9:00</string>
+    <string name="veni_a_cross_fit_a_desafiar_tus_l_mites">Veni a Cross-fit a desafiar tus límites</string>
+    <string name="ahora_tenes_clases_de_spinning_todos_los_dias">¡¡¡Ahora tenes clases de Spinning todos los dias!!!</string>
 
 
 </resources>

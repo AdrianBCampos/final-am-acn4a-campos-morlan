@@ -5,24 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/naranjasuave"
-    tools:context=".HorarioSpinningActivity">
+    tools:context=".HorarioCrossFitActivity">
 
     <TextView
-        android:id="@+id/horariosSpinning"
+
+        android:id="@+id/horarios_crossfit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+
         android:layout_marginTop="40dp"
-
-
         android:background="@color/black"
-        android:contentDescription="@string/titulo_horario_spinning"
+        android:contentDescription="@string/titulo_horario_cross_fit"
         android:foregroundGravity="center"
         android:gravity="top|fill_vertical"
-        android:text="@string/hs_spinning"
+        android:text="@string/horarios_de_cross_fit"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="26sp"
 
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +37,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horariosSpinning">
+        app:layout_constraintTop_toBottomOf="@id/horarios_crossfit">
 
 
         <TableLayout
@@ -134,6 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/black">
+
                 <TextView
                     android:id="@+id/hsLun1"
                     android:layout_width="100dp"
@@ -144,7 +146,7 @@
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_9_00_a_10_00"
+                    android:text="@string/_7_00_a_8_30"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -155,12 +157,12 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
-                    android:background="@color/turquesa"
+                    android:background="@color/black"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
                     android:lines="@integer/material_motion_duration_medium_2"
-                    android:text="@string/_8_00_a_9_30"
+
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -176,7 +178,7 @@
 
                     android:gravity="center_vertical"
                     android:lines="@integer/google_play_services_version"
-                    android:text="@string/_9_00_a_10_00"
+                    android:text="@string/_7_00_a_8_30"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -187,11 +189,11 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
-                    android:background="@color/turquesa"
+                    android:background="@color/black"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_8_00_a_9_30"
+
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -206,7 +208,7 @@
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_9_00_a_10_00"
+                    android:text="@string/_7_00_a_8_30"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -221,7 +223,7 @@
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_9_00_a_10_00"
+                    android:text="@string/_7_00_a_8_30"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -242,11 +244,11 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="1dp"
-                    android:background="@color/turquesa"
+                    android:background="@color/black"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_12_00_a_13_00"
+
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -261,7 +263,7 @@
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_14_00_a_15_00"
+                    android:text="@string/_7_30_a_9_00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -272,11 +274,11 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
-                    android:background="@color/turquesa"
+                    android:background="@color/black"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_12_00_a_13_00"
+
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -291,7 +293,7 @@
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_14_00_a_15_00"
+                    android:text="@string/_7_30_a_9_00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -302,11 +304,11 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
-                    android:background="@color/turquesa"
+                    android:background="@color/black"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_12_00_a_13_00"
+
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -317,11 +319,11 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="2dp"
-                    android:background="@color/turquesa"
+                    android:background="@color/black"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_14_00_a_15_00"
+
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -336,6 +338,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/black">
+
                 <TextView
                     android:id="@+id/hsLun3"
                     android:layout_width="120dp"
@@ -624,4 +627,6 @@
             tools:layout_editor_absoluteY="110dp" />
 
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

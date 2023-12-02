@@ -116,6 +116,7 @@
                     android:layout_height="102dp"
                     android:layout_weight="5"
                     android:contentDescription="crossImg"
+                    android:onClick="horarioCrossfit"
                     app:srcCompat="@drawable/croosfitapp" />
 
             </LinearLayout>
@@ -213,6 +214,7 @@
 
 
                     android:backgroundTint="@color/gristopo"
+                    android:onClick="horarioCrossfit"
                     android:text="@string/btn_crossfit_horarios"
                     android:textColor="#020000"
                     android:textSize="9sp"
