@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 public class HorarioSpinningActivity extends AppCompatActivity {
@@ -37,4 +38,18 @@ public class HorarioSpinningActivity extends AppCompatActivity {
 
 
     }
+
+    public void paginaPrincipal(View v){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+        startActivity(intent);
+    }
+
+
+    public void obtenerIngresoQr(View v){
+        Intent intent = new Intent (getApplicationContext(), activity_qr_view.class);
+        startActivity(intent);
+    }
+
+
 }

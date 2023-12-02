@@ -32,7 +32,7 @@ public class Downloader extends AsyncTask<String, Integer, Bitmap> {
     }
 
 
-    public void opPostExecute(Bitmap bitmap) {
+    public void onPostExecute(Bitmap bitmap) {
 
         super.onPostExecute(bitmap);
         if (bitmap == null) return;

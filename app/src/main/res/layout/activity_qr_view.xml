@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".activity_qr_view">
 
+    <Button
+        android:id="@+id/obtenerQR_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/black"
+        android:onClick="paginaPrincipal"
+        android:text="Volver al menú principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obtenerQR_btn" />
+
     <ImageView
         android:id="@+id/imageQR"
         android:layout_width="wrap_content"
@@ -20,18 +32,20 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         android:text="Este es tu codigo QR par ingresar al gym"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="184dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/obtenerQR_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="83dp"
-        android:text="Obtener mi código QR"
         android:onClick="loadImage"
+        android:text="Obtener mi código QR"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageQR" />

@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,4 +28,20 @@ public class activity_qr_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr_view);
     }
+    public void loadImage(View v){
+        ImageView imageView = findViewById(R.id.imageQR);
+        String urlqr ="https://raw.githubusercontent.com/AdrianBCampos/imagenes/main/Codigo-qr.png";
+        Log.i("Testing",urlqr);
+        Downloader descarga = new Downloader(imageView);
+        descarga.execute(urlqr);
+
+    }
+
+    public void paginaPrincipal(View v){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+        startActivity(intent);
+    }
+
+
 }
