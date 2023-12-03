@@ -22,15 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
-
-
+    public void checkConnection(){
         ConnectivityManager connectivityManager=(ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
         LinearLayout linearL = findViewById(R.id.BannerConteiner);
@@ -47,6 +39,20 @@ public class MainActivity extends AppCompatActivity {
             mensaje.setVisibility(View.VISIBLE);
             button.setVisibility (View.VISIBLE);
         }
+    }
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+        checkConnection();
+
+
+
 
 
         //LinearLayout contentNews = findViewById(R.id.contenedorBotones);
