@@ -3,11 +3,15 @@ package com.example.clonappgym;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,6 +29,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+
+
+        ConnectivityManager connectivityManager=(ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        LinearLayout linearL = findViewById(R.id.BannerConteiner);
+        TextView mensaje = findViewById(R.id.msj_no_internet);
+        Button button = findViewById(R.id.button2);
+        if (networkInfo != null && networkInfo.isConnected()){
+            Log.i ("network.testing", "probando la red");
+            linearL.setVisibility (View.VISIBLE);
+            mensaje.setVisibility (View.INVISIBLE);
+            button.setVisibility(View.INVISIBLE);
+        } else {
+            linearL.setVisibility(View.INVISIBLE);
+            mensaje.setText("Internet no disponible");
+            mensaje.setVisibility(View.VISIBLE);
+            button.setVisibility (View.VISIBLE);
+        }
+
 
         //LinearLayout contentNews = findViewById(R.id.contenedorBotones);
         //TextView nuevaPublicacion = new TextView(this);
@@ -134,6 +157,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
+
+
+
     public void horarioSpinning(View v){
         Intent intent = new Intent(getApplicationContext(), HorarioSpinningActivity.class);
         String newInfo = getString(R.string.ahora_tenes_clases_de_spinning_todos_los_dias);
@@ -162,6 +190,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void obtenerInfoApi(View v){
+        Intent intent = new Intent (getApplicationContext(), ApiActivity.class);
+        startActivity(intent);
+    }
 
 
 }

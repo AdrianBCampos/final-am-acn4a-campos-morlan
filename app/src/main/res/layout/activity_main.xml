@@ -96,7 +96,8 @@
                     android:layout_height="100dp"
                     android:layout_weight="5"
                     android:contentDescription="gapImg"
-                    app:srcCompat="@drawable/gapapp" />
+                    app:srcCompat="@drawable/gapapp"
+                    tools:onClick="obtenerInfoApi" />
 
             </LinearLayout>
 
@@ -229,6 +230,7 @@
         </TableLayout>
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/BannerConteiner"
         android:layout_width="120dp"
@@ -237,11 +239,38 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="68dp"
         android:orientation="vertical"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ButtonContainer"
         tools:layout_constraintTop_toBottomOf="@id/linearLayout2"></LinearLayout>
 
+    <TextView
+        android:id="@+id/msj_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ButtonContainer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/verdellamativo"
+        android:text="Reconectar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ButtonContainer"
+        app:layout_constraintTop_toBottomOf="@id/msj_no_internet" />
 
     <LinearLayout
         android:id="@+id/linearLayoutFooter"
