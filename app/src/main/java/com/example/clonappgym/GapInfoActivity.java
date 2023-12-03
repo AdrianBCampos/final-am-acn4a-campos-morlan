@@ -2,7 +2,13 @@ package com.example.clonappgym;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class GapInfoActivity extends AppCompatActivity {
 
@@ -11,4 +17,15 @@ public class GapInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gap_info);
     }
+
+
+
+    public void paginaPrincipal(View v){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
+
+
+
+
 }

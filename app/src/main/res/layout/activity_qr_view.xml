@@ -6,6 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".QrViewActivity">
 
+    <TextView
+        android:id="@+id/titulo_qr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+
+        android:background="@color/black"
+        android:contentDescription="@string/titulo_qr_activity"
+        android:foregroundGravity="center"
+        android:gravity="top|fill_vertical"
+        android:text="@string/ingreso_al_gym"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="@color/verdellamativo"
+        android:onClick="checkConnectionOnClick2"
+        android:text="Reconectar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/obtenerQR_btn2"
         android:layout_width="wrap_content"

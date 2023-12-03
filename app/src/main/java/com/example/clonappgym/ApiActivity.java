@@ -14,12 +14,12 @@ import android.widget.TextView;
 public class ApiActivity extends AppCompatActivity {
     public void checkConnectionOnClick2(View v){
 
-        checkConnection2();
+        checkConnection();
 
     }
 
 
-    public void checkConnection2(){
+    public void checkConnection(){
         ConnectivityManager connectivityManager=(ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
@@ -49,7 +49,7 @@ public class ApiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_api);
-        checkConnection2();
+        checkConnection();
 
     }
 

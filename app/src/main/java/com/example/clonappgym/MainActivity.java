@@ -207,6 +207,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void gap(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), GapInfoActivity.class);
+
+        startActivity(intent);
+
+    }
+
+
 
 
 }

@@ -8,7 +8,7 @@
     tools:context=".HorarioSpinningActivity">
 
     <TextView
-        android:id="@+id/horariosSpinning"
+        android:id="@+id/titulo_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -36,7 +36,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horariosSpinning">
+        app:layout_constraintTop_toBottomOf="@+id/titulo_qr">
 
 
         <TableLayout
@@ -608,13 +608,13 @@
             tools:layout_editor_absoluteY="110dp" />
 
         <ImageButton
-            android:id="@+id/btn_agendar"
+            android:id="@+id/btn_api"
             android:layout_width="73dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/calendario"
+            android:backgroundTint="@color/verdeclaro"
 
+            app:srcCompat="@mipmap/api"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
 
