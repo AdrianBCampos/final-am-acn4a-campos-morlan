@@ -97,7 +97,6 @@
                     android:layout_weight="5"
                     android:contentDescription="gapImg"
 
-                    android:onClick="infoApi"
                     app:srcCompat="@drawable/gapapp" />
 
             </LinearLayout>
@@ -281,7 +280,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="675dp"
         android:layout_marginBottom="1dp"
-        android:background="#CECDC26D"
+        android:background="@color/verdeclaro"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -293,7 +292,7 @@
             android:layout_width="73dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#CECDC26D"
+            android:backgroundTint="@color/verdeclaro"
 
             app:srcCompat="@mipmap/codqr"
             tools:layout_editor_absoluteX="121dp"
@@ -304,9 +303,11 @@
             android:layout_width="73dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/calendario"
+            android:backgroundTint="@color/verdeclaro"
 
+            android:onClick="infoApi"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/api2"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
 
@@ -315,7 +316,7 @@
             android:layout_width="73dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#CECDC26D"
+            android:backgroundTint="@color/verdeclaro"
             android:contentDescription="TODO"
 
 
@@ -329,7 +330,7 @@
             android:layout_width="73dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#CECDC26D"
+            android:backgroundTint="@color/verdeclaro"
             app:srcCompat="@mipmap/correo"
 
             tools:layout_editor_absoluteX="121dp"
