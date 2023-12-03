@@ -51,5 +51,11 @@ public class HorarioSpinningActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void infoApi(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ApiActivity.class);
+        startActivity(intent);
+
+    }
 
 }

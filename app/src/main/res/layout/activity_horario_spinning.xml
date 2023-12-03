@@ -614,6 +614,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/verdeclaro"
 
+            android:onClick="infoApi"
             app:srcCompat="@mipmap/api"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
