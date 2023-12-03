@@ -20,17 +20,19 @@
         <TextView
 
 
-            android:id="@+id/textView"
+            android:id="@+id/msj_no_internet2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no_hay_internet" />
+            android:text="@string/no_hay_internet"
+            android:visibility="visible" />
 
         <Button
-            android:id="@+id/btn_check_connection"
+            android:id="@+id/button33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkConnectionOnClick"
-            android:text="@string/noInternetMessageButtonText" />
+            android:text="@string/noInternetMessageButtonText"
+            android:visibility="invisible" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

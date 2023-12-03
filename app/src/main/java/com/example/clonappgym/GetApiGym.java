@@ -1,6 +1,5 @@
 package com.example.clonappgym;
 
-
 import android.os.AsyncTask;
 import android.util.Log;
 import org.json.JSONArray;
@@ -25,17 +24,20 @@ public class GetApiGym extends AsyncTask<String, Integer, String> {
             return response.body().string();
         }
     }
+
     @Override
     protected String doInBackground(String... strings) {
         String url = strings[0];
-        String response = "";
+        String response ="";
         try {
             response = run(url);
             JSONObject character = new JSONObject(response);
-            JSONArray results = (JSONArray) character.get("results");
-            JSONObject charater0 = (JSONObject) results.get(0);
+            JSONArray results = (JSONArray)  character.get("results");
+            JSONObject character3 = (JSONObject) results.get(2);
+            String nameCharacter3 = (String) character3.get("name");
+            response = nameCharacter3;
         } catch (IOException | JSONException e) {
-            throw new RuntimeException(e);
+           throw new RuntimeException(e);
         }
         return response;
     }
@@ -46,3 +48,4 @@ public class GetApiGym extends AsyncTask<String, Integer, String> {
         Log.i("probando url", s);
     }
 }
+

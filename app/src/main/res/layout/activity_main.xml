@@ -96,8 +96,9 @@
                     android:layout_height="100dp"
                     android:layout_weight="5"
                     android:contentDescription="gapImg"
-                    app:srcCompat="@drawable/gapapp"
-                    tools:onClick="obtenerInfoApi" />
+
+                    android:onClick="infoApi"
+                    app:srcCompat="@drawable/gapapp" />
 
             </LinearLayout>
 

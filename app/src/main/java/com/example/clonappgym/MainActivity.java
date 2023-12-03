@@ -200,10 +200,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void obtenerInfoApi(View v){
-        Intent intent = new Intent (getApplicationContext(), ApiActivity.class);
-        startActivity(intent);
+    public void infoApi(View v) {
+
+            Intent intent = new Intent(getApplicationContext(), ApiActivity.class);
+            startActivity(intent);
+
     }
+
 
 
 }
