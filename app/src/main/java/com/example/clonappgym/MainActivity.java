@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
+    public void checkConnectionOnClick (View v){
+        checkConnection();
+    }
 
 
     public void checkConnection(){
