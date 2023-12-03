@@ -247,7 +247,7 @@
 
     <TextView
         android:id="@+id/msj_no_internet"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="500dp"
@@ -259,7 +259,7 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
@@ -268,6 +268,7 @@
         android:text="Reconectar"
         android:textAlignment="center"
         android:textColor="@color/black"
+        android:textSize="8sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ButtonContainer"
         app:layout_constraintTop_toBottomOf="@id/msj_no_internet" />
