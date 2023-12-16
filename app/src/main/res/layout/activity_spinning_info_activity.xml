@@ -46,7 +46,7 @@
 
             <ImageView
                 android:id="@+id/foto"
-                android:layout_width="390dp"
+                android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:contentDescription="fotoGAP"
                 android:duplicateParentState="false"
@@ -67,7 +67,7 @@
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/notaspinning"
                         android:textSize="16sp" />
