@@ -11,7 +11,7 @@ public class SpinningInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spinning_info_activity);
+        setContentView(R.layout.activity_spinning_info);
     }
 
     public void paginaPrincipal(View v){
