@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/naranjasuave"
-    tools:context=".GapInfoActivity">
+    tools:context=".SpinningInfoActivity">
 
     <TextView
-        android:id="@+id/gap_titulo"
+        android:id="@+id/gap_titulo3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="9dp"
         android:autoText="false"
         android:background="@color/verdeclaro"
-        android:text="@string/tituloGap"
+        android:text="@string/spinninginfo"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -51,7 +51,7 @@
                 android:contentDescription="fotoGAP"
                 android:duplicateParentState="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/gapimg" />
+                app:srcCompat="@drawable/spinning4" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -67,9 +67,9 @@
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/infoGap"
+                        android:text="@string/notaspinning"
                         android:textSize="16sp" />
                 </LinearLayout>
             </ScrollView>

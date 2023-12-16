@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/naranjasuave"
-    tools:context=".GapInfoActivity">
+    tools:context=".CrossFitInfoActivity">
 
     <TextView
-        android:id="@+id/gap_titulo"
+        android:id="@+id/gap_titulo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="9dp"
         android:autoText="false"
         android:background="@color/verdeclaro"
-        android:text="@string/tituloGap"
+        android:text="@string/infoCross"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -46,12 +46,12 @@
 
             <ImageView
                 android:id="@+id/foto"
-                android:layout_width="390dp"
+                android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:contentDescription="fotoGAP"
                 android:duplicateParentState="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/gapimg" />
+                app:srcCompat="@drawable/cross3" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -67,9 +67,9 @@
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/infoGap"
+                        android:text="@string/notacross"
                         android:textSize="16sp" />
                 </LinearLayout>
             </ScrollView>

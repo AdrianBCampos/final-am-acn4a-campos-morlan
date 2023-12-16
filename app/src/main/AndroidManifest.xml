@@ -16,6 +16,12 @@
         android:theme="@style/Theme.ClonAppGym"
         tools:targetApi="34">
         <activity
+            android:name=".CrossFitInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpinningInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".GapInfoActivity"
             android:exported="false" />
         <activity

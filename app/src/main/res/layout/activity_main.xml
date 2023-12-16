@@ -74,7 +74,7 @@
                     android:layout_height="99dp"
                     android:layout_weight="5"
                     android:contentDescription="spinnignImg"
-                    android:onClick="horarioSpinning"
+                    android:onClick="spinning"
                     app:srcCompat="@drawable/spinningapp" />
 
 
@@ -118,7 +118,7 @@
                     android:layout_height="102dp"
                     android:layout_weight="5"
                     android:contentDescription="crossImg"
-                    android:onClick="horarioCrossfit"
+                    android:onClick="cross"
                     app:srcCompat="@drawable/croosfitapp" />
 
             </LinearLayout>

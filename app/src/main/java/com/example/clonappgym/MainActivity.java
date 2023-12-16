@@ -215,7 +215,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void spinning(View v) {
 
+        Intent intent = new Intent(getApplicationContext(), SpinningInfoActivity.class);
+
+        startActivity(intent);
+
+    }
+
+    public void cross(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), CrossFitInfoActivity.class);
+
+        startActivity(intent);
+
+    }
 
 
 }
