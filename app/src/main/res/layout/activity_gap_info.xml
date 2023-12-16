@@ -57,7 +57,7 @@
                     <ImageView
                         android:id="@+id/foto"
                         android:layout_width="390dp"
-                        android:layout_height="170dp"
+                        android:layout_height="wrap_content"
                         android:contentDescription="fotoGAP"
                         android:duplicateParentState="false"
                         android:scaleType="fitCenter"
