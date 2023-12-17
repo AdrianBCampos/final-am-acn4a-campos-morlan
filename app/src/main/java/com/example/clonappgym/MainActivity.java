@@ -93,8 +93,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
-
         /*ImageButton homeButton = findViewById(R.id.btn_home);
         homeButton.setOnClickListener(new View.OnClickListener() {
 

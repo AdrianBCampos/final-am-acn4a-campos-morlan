@@ -35,7 +35,7 @@ public class ApiActivity extends AppCompatActivity {
             volver.setVisibility(View.VISIBLE);
             button4.setVisibility(View.INVISIBLE);
             GetApiGym ejercicios = new GetApiGym();
-            ejercicios.execute("https://rickandmortyapi.com/api/character/?name=rick&status=alive");
+            ejercicios.execute("https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json");
 
         } else {
             msj.setText("No hay conexion a internet");

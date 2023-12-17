@@ -2,6 +2,7 @@ package com.example.clonappgym;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.LinearLayout;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -20,60 +21,66 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-class Character {
+/*class Exercise {
     public String name;
-    public String image;
+
 }
 
 class Data {
-    public List<Character> results;
-}
-public class GetApiGym extends AsyncTask<String, Integer, String> {
+    public List<Exercise> results;
+}*/
+public class GetApiGym extends AsyncTask<String, Integer, JSONArray> {
 
     OkHttpClient client = new OkHttpClient();
 
-    String run(String url) throws IOException {
+    JSONArray run(String url) throws IOException, JSONException {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
 
         try (Response response = client.newCall(request).execute()) {
-            return response.body().string();
+            String jsonResponse = response.body().string();
+            return new JSONArray(jsonResponse);
         }
     }
 
     @Override
-    protected String doInBackground(String... strings) {
+    protected JSONArray doInBackground(String... strings) {
         String url = strings[0];
-        String response ="";
+        JSONArray jsonArray = null;
         try {
-            response = run(url);
-            ObjectMapper objectMapper = new ObjectMapper();
-            objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            Data respuesta = objectMapper.readValue(response, Data.class);
-            //response = respuesta.results.get(0).name;
-
-            List<Character> personajes = respuesta.results;
-            for (int i=0; i<personajes.size(); i++){
-                Log.i("personajes", personajes.get(i).name);
-                Log.i("personajes", personajes.get(i).image);
-            }
-            response = "funciona";
-            /*JSONObject character = new JSONObject(response);
-            JSONArray results = (JSONArray)  character.get("results");
-            JSONObject character3 = (JSONObject) results.get(2);
-            String nameCharacter3 = (String) character3.get("name");
-            response = nameCharacter3;*/
-        } catch (IOException e) {
-           throw new RuntimeException(e);
+            jsonArray = run(url);
+        } catch (IOException | JSONException e) {
+            e.printStackTrace();
         }
-        return response;
+        return jsonArray;
     }
 
     @Override
-    protected void onPostExecute(String s) {
-        super.onPostExecute(s);
-        Log.i("probando url", s);
+    protected void onPostExecute(JSONArray jsonArray) {
+        super.onPostExecute(jsonArray);
+        if (jsonArray != null) {
+            // Procesar y utilizar los datos según sea necesario
+            try {
+
+
+                // Iterar sobre el array JSON y mostrar nombres y descripciones
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject item = jsonArray.getJSONObject(i);
+                    String nombre = item.getString("name");
+                    String descripcion = item.getString("instructions");
+
+                    Log.i("GetApiGym", "Nombre: " + nombre);
+                    Log.i("GetApiGym", "Descripción: " + descripcion);
+
+                    // Puedes realizar otras acciones con los datos aquí
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        } else {
+            // Manejar el caso en el que el array JSON sea nulo
+            Log.e("GetApiGym", "El array JSON es nulo");
+        }
     }
 }
-
