@@ -8,17 +8,6 @@
     android:background="@color/naranjasuave"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="46dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:contentDescription="Esta imagen representa al menu hamburguesa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
@@ -152,6 +141,7 @@
 
 
                     android:backgroundTint="@color/gristopo"
+                    android:onClick="rutinaonline"
                     android:text="@string/rutina_online"
                     android:textColor="#020000"
                     android:textSize="9sp"
@@ -197,6 +187,7 @@
                     android:layout_marginEnd="3dp"
 
                     android:backgroundTint="@color/gristopo"
+                    android:onClick="grillaHorarios"
                     android:text="@string/grilla_horarios"
                     android:textColor="#020000"
                     android:textSize="9sp"
@@ -331,8 +322,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/verdeclaro"
-            app:srcCompat="@mipmap/correo"
+            android:onClick="contacto"
 
+            app:srcCompat="@mipmap/correo"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
 

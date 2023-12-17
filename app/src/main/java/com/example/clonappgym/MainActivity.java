@@ -231,5 +231,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void contacto(View v) {
 
+        Intent intent = new Intent(getApplicationContext(), ContactoActivity.class);
+
+        startActivity(intent);
+
+    }
+
+    public void grillaHorarios(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), GrillaHorarios.class);
+
+        startActivity(intent);
+
+    }
+
+    public void rutinaonline(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), RutinaOnlineActivity.class);
+
+        startActivity(intent);
+
+    }
 }

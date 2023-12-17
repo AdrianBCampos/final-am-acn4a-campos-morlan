@@ -16,6 +16,33 @@
         android:theme="@style/Theme.ClonAppGym"
         tools:targetApi="34">
         <activity
+            android:name=".GanarFlexibilidad"
+            android:exported="false" />
+        <activity
+            android:name=".ResistenciaAerobicaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DefinicionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GanarMasaMuscularActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BajarDePesoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GrillaHorarios"
+            android:exported="false" />
+        <activity
+            android:name=".RutinaOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InscripcionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactoActivity"
+            android:exported="false" />
+        <activity
             android:name=".CrossFitInfoActivity"
             android:exported="false" />
         <activity
