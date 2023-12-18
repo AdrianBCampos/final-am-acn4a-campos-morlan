@@ -143,14 +143,14 @@
                     android:backgroundTint="@color/gristopo"
                     android:onClick="rutinaonline"
                     android:text="@string/rutina_online"
-                    android:textColor="#020000"
+                    android:textColor="@color/verdellamativo"
                     android:textSize="9sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/gimnasio"
                     app:iconGravity="top"
                     app:iconPadding="2dp"
                     app:iconSize="50dp"
-                    app:iconTint="#000000" />
+                    app:iconTint="@color/verdellamativo" />
 
                 <Button
                     android:id="@+id/button3"
@@ -163,14 +163,14 @@
                     android:backgroundTint="@color/gristopo"
                     android:onClick="horarioSpinning"
                     android:text="@string/spinning_horarios"
-                    android:textColor="#020000"
+                    android:textColor="@color/verdellamativo"
                     android:textSize="9sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/bicicletaestatica"
                     app:iconGravity="top"
                     app:iconPadding="2dp"
                     app:iconSize="50dp"
-                    app:iconTint="#000000" />
+                    app:iconTint="@color/verdellamativo" />
 
             </TableRow>
 
@@ -189,14 +189,14 @@
                     android:backgroundTint="@color/gristopo"
                     android:onClick="grillaHorarios"
                     android:text="@string/grilla_horarios"
-                    android:textColor="#020000"
+                    android:textColor="@color/verdellamativo"
                     android:textSize="9sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/calendario"
                     app:iconGravity="top"
                     app:iconPadding="2dp"
                     app:iconSize="50dp"
-                    app:iconTint="#000000" />
+                    app:iconTint="@color/verdellamativo" />
 
                 <Button
                     android:id="@+id/btn_CrossHorarios"
@@ -209,14 +209,14 @@
                     android:backgroundTint="@color/gristopo"
                     android:onClick="horarioCrossfit"
                     android:text="@string/btn_crossfit_horarios"
-                    android:textColor="#020000"
+                    android:textColor="@color/verdellamativo"
                     android:textSize="9sp"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/cross2"
                     app:iconGravity="top"
                     app:iconPadding="2dp"
                     app:iconSize="50dp"
-                    app:iconTint="#000000" />
+                    app:iconTint="@color/verdellamativo" />
 
             </TableRow>
         </TableLayout>
