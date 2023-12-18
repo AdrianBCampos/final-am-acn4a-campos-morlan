@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -50,11 +51,18 @@ public class SigninActivity extends AppCompatActivity {
         String email2String = email2.getText().toString();
         String pass2String = pass2.getText().toString();
 
+        if (email2String.isEmpty() || pass2String.isEmpty()) {
 
-        Log.i("login email", email2String);
-        Log.i("login pass", pass2String);
+            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
+        } else if (pass2String.length() < 6) {
 
-        this.signIn(email2String, pass2String);
+            Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
+        } else {
+
+            Log.i("login email", email2String);
+            Log.i("login pass", pass2String);
+            this.signIn(email2String, pass2String);
+        }
     }
 
     public void volver (View v){

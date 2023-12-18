@@ -58,12 +58,17 @@ public class LoginActivity extends AppCompatActivity {
         String emailString = email.getText().toString();
         String passString = pass.getText().toString();
 
+        if (emailString.isEmpty() || passString.isEmpty()) {
 
-        Log.i("login email", emailString);
-        Log.i("login pass", passString);
+            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
+        } else {
 
-        this.login(emailString, passString);
+            Log.i("login email", emailString);
+            Log.i("login pass", passString);
+            this.login(emailString, passString);
+        }
     }
+
 
     public void crearUsuario (View v){
         Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
