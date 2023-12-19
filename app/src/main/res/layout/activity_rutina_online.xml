@@ -56,83 +56,104 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/textView16"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conteiner_opciones"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="OBJETIVO"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/volverBtn2"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="@color/verdeclaro"
-                    android:onClick="paginaBajarPeso"
-                    android:text="Bajar de Peso"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    tools:layout_constraintTop_toBottomOf="@id/textView8" />
+                    <TextView
+                        android:id="@+id/titulo_objetivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="OBJETIVO"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/volverBtn11"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="@color/verdeclaro"
-                    android:onClick="paginaGanarMasa"
-                    android:text="Ganar Masa Muscular"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    tools:layout_constraintTop_toBottomOf="@id/textView8" />
+                    <Button
+                        android:id="@+id/bajar_peso_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="60dp"
+                        android:backgroundTint="@color/verdeclaro"
+                        android:onClick="paginaBajarPeso"
+                        android:text="Bajar de Peso"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_constraintTop_toBottomOf="@id/textView8" />
 
-                <Button
-                    android:id="@+id/volverBtn15"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="@color/verdeclaro"
-                    android:onClick="paginaDefinicion"
-                    android:text="Definicion"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    tools:layout_constraintTop_toBottomOf="@id/textView8" />
+                    <Button
+                        android:id="@+id/masa_musc_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="115dp"
+                        android:backgroundTint="@color/verdeclaro"
+                        android:onClick="paginaGanarMasa"
+                        android:text="Ganar Masa Muscular"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_constraintTop_toBottomOf="@id/textView8" />
 
-                <Button
-                    android:id="@+id/volverBtn16"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="@color/verdeclaro"
-                    android:onClick="paginaResistencia"
-                    android:text="Resistencia Aerobica"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    tools:layout_constraintTop_toBottomOf="@id/textView8" />
+                    <Button
+                        android:id="@+id/definicion_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="170dp"
+                        android:backgroundTint="@color/verdeclaro"
+                        android:onClick="paginaDefinicion"
+                        android:text="Definicion"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_constraintTop_toBottomOf="@id/textView8" />
 
-                <Button
-                    android:id="@+id/volverBtn17"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="@color/verdeclaro"
-                    android:onClick="paginaFlexibilidad"
-                    android:text="Ganar Flexibilidad"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    tools:layout_constraintTop_toBottomOf="@id/textView8" />
+                    <Button
+                        android:id="@+id/resistencia_aerobica_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="225dp"
+                        android:backgroundTint="@color/verdeclaro"
+                        android:onClick="paginaResistencia"
+                        android:text="Resistencia Aerobica"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_constraintTop_toBottomOf="@id/textView8" />
+
+                    <Button
+                        android:id="@+id/flex_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="280dp"
+                        android:backgroundTint="@color/verdeclaro"
+                        android:onClick="paginaFlexibilidad"
+                        android:text="Ganar Flexibilidad"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_constraintTop_toBottomOf="@id/textView8" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
 
