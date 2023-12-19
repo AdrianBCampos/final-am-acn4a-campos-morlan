@@ -52,4 +52,11 @@ public class HorarioCrossFitActivity extends AppCompatActivity {
 
     }
 
+    public void contacto(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ContactoActivity.class);
+
+        startActivity(intent);
+
+    }
 }
