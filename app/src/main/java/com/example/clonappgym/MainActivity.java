@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
             boolean emailVerificationDone = preferences.getBoolean(EMAIL_VERIFICATION_KEY, false);
 
-            if(verificado && !emailVerificationDone){
+            if(verificado && emailVerificationDone){
                 Toast.makeText(this, "Hola, tu email está verificado.", Toast.LENGTH_SHORT).show();
 
                 this.db.collection("usuarios")
