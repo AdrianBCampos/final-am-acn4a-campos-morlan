@@ -31,12 +31,522 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="395dp"
-        android:layout_height="430dp"
+    <HorizontalScrollView
+        android:id="@+id/scrollH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="300dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/LunesCrossfit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/lunes"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/MartesCrossfit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/martes"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/miercolesCrossfit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/miercoles"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/juevesCrossfit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/jueves"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viernesCrossfit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/amarillo"
+                    android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/viernes"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sabadoCrossfit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/amarillo"
+                    android:contentDescription="@string/dia_semana_text"
+                    android:text="@string/sabado"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/hsLun1"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+
+                    android:contentDescription="@string/horario_text"
+                    android:gravity="center_vertical"
+                    android:text="Spinning \n9:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMart1"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:lines="@integer/material_motion_duration_medium_2"
+                    android:text="Cross-Fit \n 8:00 a 9:00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMier1"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:lines="@integer/google_play_services_version"
+                    android:text="Gap \n 9:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsJue1"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="Cross-Fit \n 8:00 a 10:00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsVier1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_9_00_a_10_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsSab1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_9_00_a_10_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/hsLun2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_12_00_a_13_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMar2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_14_00_a_15_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMier2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_12_00_a_13_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsJue2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_14_00_a_15_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsVier2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_12_00_a_13_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsSab2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_14_00_a_15_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/hsLun3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_18_00_a_19_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMar3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_18_00_a_19_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMier3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_18_00_a_19_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsJue3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_18_00_a_19_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsVier3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_18_00_a_19_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsSab3"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_18_00_a_19_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/hsLun4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMar4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_00_a_21_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsMier4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsJue4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_00_a_21_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsVier4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/hsSab4"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@color/turquesa"
+                    android:contentDescription="@string/horario_text"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/_20_30_a_22_00"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="600dp"
         android:layout_marginEnd="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +554,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="412dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +565,6 @@
                 android:id="@+id/enviarmensaje"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="150dp"
                 android:backgroundTint="@color/verdellamativo"
                 android:onClick="paginainscripcion"
                 android:text="Inscribirse a Clases"

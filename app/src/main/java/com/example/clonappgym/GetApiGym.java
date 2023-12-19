@@ -60,11 +60,11 @@ public class GetApiGym extends AsyncTask<String, Integer, JSONArray> {
     protected void onPostExecute(JSONArray jsonArray) {
         super.onPostExecute(jsonArray);
         if (jsonArray != null) {
-            // Procesar y utilizar los datos según sea necesario
+
             try {
 
 
-                // Iterar sobre el array JSON y mostrar nombres y descripciones
+
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject item = jsonArray.getJSONObject(i);
                     String nombre = item.getString("name");
@@ -73,13 +73,13 @@ public class GetApiGym extends AsyncTask<String, Integer, JSONArray> {
                     Log.i("GetApiGym", "Nombre: " + nombre);
                     Log.i("GetApiGym", "Descripción: " + descripcion);
 
-                    // Puedes realizar otras acciones con los datos aquí
+
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         } else {
-            // Manejar el caso en el que el array JSON sea nulo
+
             Log.e("GetApiGym", "El array JSON es nulo");
         }
     }
