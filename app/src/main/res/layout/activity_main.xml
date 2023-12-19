@@ -342,21 +342,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
-        android:id="@+id/cerrarSesion_btn"
-        android:layout_width="83dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="6dp"
-        android:backgroundTint="@color/verdellamativo"
-        android:onClick="logout"
-        android:text="EXIT"
-        android:textColor="@color/black"
-        android:textSize="10sp"
-        app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
@@ -368,6 +353,19 @@
         android:onClick="posteo"
         android:src="@mipmap/camara"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/naranjasuave"
+        android:contentDescription="@string/btn_cam"
+        android:onClick="usuario_info"
+        android:src="@mipmap/usuario"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 

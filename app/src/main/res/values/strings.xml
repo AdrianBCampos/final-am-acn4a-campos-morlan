@@ -68,5 +68,6 @@
 
     <string name="btn_cam">boton de camara</string>
     <string name="subi_tu_selfie_en_el_gym">¡¡¡Subi tu selfie en el gym!!!</string>
+    <string name="iconuser">iconUser</string>
 
 </resources>

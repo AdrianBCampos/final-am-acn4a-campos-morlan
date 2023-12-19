@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
 
+    private String uid;
 
     public void checkConnectionOnClick (View v){
         checkConnection();
@@ -159,23 +160,29 @@ public class MainActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
+            this.uid = currentUser.getUid();
             String email= currentUser.getEmail();
             Boolean verificado = currentUser.isEmailVerified();
             Log.i("firebase email", email);
 
 
             if(verificado){
-                Toast.makeText(this, "Hola, tu email está verificado.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Hola, tu email está verificado.", Toast.LENGTH_SHORT).show();
 
-                this.db.collection("usuarios").get().addOnCompleteListener(
+                this.db.collection("usuarios")
+                        .whereEqualTo("uid", uid)
+                        .get()
+                        .addOnCompleteListener(
                         new OnCompleteListener<QuerySnapshot>() {
                             @Override
                             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                 if(task.isSuccessful()){
                                     for (QueryDocumentSnapshot document : task.getResult()){
                                         String id = document.getId();
+                                        String nombre = document.getString("nombre");
                                         db.collection("usuarios").document(id).update("verificado",true);
                                         Log.d("TAG", id+"=>"+document.getData());
+                                        Log.d("TAG",nombre);
 
                                     }
                                 }
@@ -313,6 +320,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void posteo(View v){
         Intent intent = new Intent(getApplicationContext(), PublicacionActivity.class);
+        startActivity(intent);
+    }
+
+    public void usuario_info(View v){
+        Intent intent = new Intent(getApplicationContext(), UserInfoActivity.class);
         startActivity(intent);
     }
 }

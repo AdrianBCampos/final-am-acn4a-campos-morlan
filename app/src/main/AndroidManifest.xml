@@ -16,6 +16,9 @@
         android:theme="@style/Theme.ClonAppGym"
         tools:targetApi="34">
         <activity
+            android:name=".UserInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".PublicacionActivity"
             android:exported="false" />
         <activity
