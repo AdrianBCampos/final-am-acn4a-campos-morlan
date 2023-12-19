@@ -105,13 +105,6 @@ public class QrViewActivity extends AppCompatActivity {
         }
 
 
-
-
-
-
-
-
-
     }
 
     public void paginaPrincipal(View v) {

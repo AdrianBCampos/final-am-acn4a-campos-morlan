@@ -5,10 +5,13 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +28,7 @@ public class UserInfoActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
     private String uid;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,12 @@ public class UserInfoActivity extends AppCompatActivity {
                                                 String id = document.getId();
                                                 String nombre = document.getString("nombre");
                                                 String apellido = document.getString("apellido");
+                                                String url = document.getString("avatar");
+
+                                                ImageView avatar = findViewById(R.id.avatar);
+                                                String urlqr = url;
+                                                Downloader descarga = new Downloader(avatar);
+                                                descarga.execute(urlqr);
 
                                                 TextView nombre_txt = findViewById(R.id.nombre);
                                                 nombre_txt.setText(nombre);
@@ -71,6 +81,18 @@ public class UserInfoActivity extends AppCompatActivity {
 
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void paginaPrincipal(View v){
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
