@@ -112,7 +112,7 @@
                     app:srcCompat="@drawable/facebook" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/whatsapp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -120,7 +120,7 @@
                     app:srcCompat="@drawable/whatsapp" />
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/insta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -128,20 +128,70 @@
                     app:srcCompat="@drawable/instagram" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/volverBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="350dp"
-                android:backgroundTint="@color/black"
-                android:onClick="paginaPrincipal"
-                android:text="Volver al menú principal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_constraintTop_toBottomOf="@id/textView8" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="675dp"
+        android:background="@color/verdeclaro"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verdeclaro"
+
+            android:onClick="paginaPrincipal"
+            app:srcCompat="@mipmap/codqr"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageButton
+            android:id="@+id/btn_api"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verdeclaro"
+
+            android:onClick="infoApi"
+            app:srcCompat="@mipmap/api"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageButton
+            android:id="@+id/btn_qr"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verdeclaro"
+            android:contentDescription="TODO"
+
+
+            android:onClick="obtenerIngresoQr"
+            app:srcCompat="@mipmap/codigoq"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageButton
+            android:id="@+id/btn_correo"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verdeclaro"
+            android:onClick="contacto"
+
+            app:srcCompat="@mipmap/correo"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="110dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

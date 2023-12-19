@@ -26,13 +26,13 @@ public class ApiActivity extends AppCompatActivity {
 
         TextView msj = findViewById(R.id.textView);
         Button button4 = findViewById(R.id.button4);
-        Button volver = findViewById(R.id.volver_mp);
+
         if (networkInfo != null && networkInfo.isConnected()){
             Log.i ("network.testing", "probando la red");
 
             msj.setText("Conectado a internet");
             msj.setVisibility((View.VISIBLE));
-            volver.setVisibility(View.VISIBLE);
+
             button4.setVisibility(View.INVISIBLE);
             GetApiGym ejercicios = new GetApiGym();
             ejercicios.execute("https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json");
@@ -41,7 +41,7 @@ public class ApiActivity extends AppCompatActivity {
             msj.setText("No hay conexion a internet");
             msj.setVisibility(View.VISIBLE);
             button4.setVisibility(View.VISIBLE);
-            volver.setVisibility(View.VISIBLE);
+
         }
     }
 
@@ -57,6 +57,25 @@ public class ApiActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
         startActivity(intent);
+    }
+
+    public void obtenerIngresoQr(View v){
+        Intent intent = new Intent (getApplicationContext(), QrViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void infoApi(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ApiActivity.class);
+        startActivity(intent);
+
+    }
+    public void contacto(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ContactoActivity.class);
+
+        startActivity(intent);
+
     }
 
 

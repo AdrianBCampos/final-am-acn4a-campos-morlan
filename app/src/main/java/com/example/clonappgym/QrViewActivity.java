@@ -26,7 +26,7 @@ public class QrViewActivity extends AppCompatActivity {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-        Button volver = findViewById(R.id.obtenerQR_btn2);
+
         ImageView fotoQr = findViewById(R.id.imageQR);
 
         TextView msj = findViewById(R.id.text_qr_activity);
@@ -42,14 +42,14 @@ public class QrViewActivity extends AppCompatActivity {
             msj.setText("(Hacé click en el botón para obtener tu codigo QR)");
             msj.setVisibility((View.VISIBLE));
             obtenerQr.setVisibility(View.VISIBLE);
-            volver.setVisibility(View.VISIBLE);
+
 
 
         } else {
             msj.setText("No hay conexion a internet");
             msj.setVisibility(View.VISIBLE);
             button5.setVisibility(View.VISIBLE);
-            volver.setVisibility(View.VISIBLE);
+
             obtenerQr.setVisibility(View.INVISIBLE);
             fotoQr.setVisibility(View.INVISIBLE);
         }
@@ -68,7 +68,7 @@ public class QrViewActivity extends AppCompatActivity {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-        Button volver = findViewById(R.id.obtenerQR_btn2);
+
         ImageView fotoQr = findViewById(R.id.imageQR);
 
         TextView msj = findViewById(R.id.text_qr_activity);
@@ -84,7 +84,7 @@ public class QrViewActivity extends AppCompatActivity {
             msj.setText("(Hacé click en el botón para obtener tu codigo QR)");
             msj.setVisibility((View.VISIBLE));
             obtenerQr.setVisibility(View.VISIBLE);
-            volver.setVisibility(View.VISIBLE);
+
             ImageView imageView = findViewById(R.id.imageQR);
             String urlqr = "https://raw.githubusercontent.com/AdrianBCampos/imagenes/main/Codigo-qr.png";
             Log.i("Testing", urlqr);
@@ -99,7 +99,7 @@ public class QrViewActivity extends AppCompatActivity {
             msj.setText("No hay conexion a internet");
             msj.setVisibility(View.VISIBLE);
             button5.setVisibility(View.VISIBLE);
-            volver.setVisibility(View.VISIBLE);
+
             obtenerQr.setVisibility(View.INVISIBLE);
             fotoQr.setVisibility(View.INVISIBLE);
         }
@@ -119,5 +119,25 @@ public class QrViewActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void obtenerIngresoQr(View v){
+        Intent intent = new Intent (getApplicationContext(), QrViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void infoApi(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ApiActivity.class);
+        startActivity(intent);
+
+    }
+    public void contacto(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ContactoActivity.class);
+
+        startActivity(intent);
+
+    }
+
 
 }
