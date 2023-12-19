@@ -1,5 +1,7 @@
 package com.example.clonappgym;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,13 +14,22 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
+    private FirebaseFirestore db;
+
 
     public void checkConnectionOnClick (View v){
         checkConnection();
@@ -53,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
         checkConnection();
+        db = FirebaseFirestore.getInstance();
 
 
 
@@ -148,7 +160,53 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
             String email= currentUser.getEmail();
+            Boolean verificado = currentUser.isEmailVerified();
             Log.i("firebase email", email);
+
+
+            if(verificado){
+                Toast.makeText(this, "Hola, tu email está verificado.", Toast.LENGTH_LONG).show();
+
+                this.db.collection("usuarios").get().addOnCompleteListener(
+                        new OnCompleteListener<QuerySnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if(task.isSuccessful()){
+                                    for (QueryDocumentSnapshot document : task.getResult()){
+                                        String id = document.getId();
+                                        db.collection("usuarios").document(id).update("verificado",true);
+                                        Log.d("TAG", id+"=>"+document.getData());
+
+                                    }
+                                }
+                            }
+                        }
+                );
+            }else{
+                String mensajeCompleto = "Hola, tu email " + email + ", necesita ser verificado. Al hacer click en 'Aceptar', recibirá un email para poder realizar esta verificación.";
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                View view = getLayoutInflater().inflate(R.layout.custom_dialog, null);
+                builder.setView(view);
+
+                TextView textViewMensaje = view.findViewById(R.id.textViewMensaje);
+                textViewMensaje.setText(mensajeCompleto);
+
+                AlertDialog dialog = builder.create();
+                Button btnAceptar = view.findViewById(R.id.btnAceptar);
+                btnAceptar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        currentUser.sendEmailVerification();
+
+                    }
+                });
+
+
+                dialog.show();
+            }
+
         } else {
             Log.i("firebase email", "No hay usuario");
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);

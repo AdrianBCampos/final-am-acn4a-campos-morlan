@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "527307800317",
-    "project_id": "clon-app-gym-b8c18",
-    "storage_bucket": "clon-app-gym-b8c18.appspot.com"
+    "project_number": "490154263906",
+    "project_id": "clon-app-gym",
+    "storage_bucket": "clon-app-gym.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:527307800317:android:cc8e91e289eb1707bdc894",
+        "mobilesdk_app_id": "1:490154263906:android:11c6d6e9fbbc4d8a94583b",
         "android_client_info": {
           "package_name": "com.example.clonappgym"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD94v9Krn746OwWnDaFs2FkeTcDUThTLc0"
+          "current_key": "AIzaSyDkhrio0agpFhMkjekEizziBT5Wcnj9D6E"
         }
       ],
       "services": {
