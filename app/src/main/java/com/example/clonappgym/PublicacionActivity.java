@@ -1,6 +1,7 @@
 package com.example.clonappgym;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -42,6 +43,9 @@ public class PublicacionActivity extends AppCompatActivity {
                 }
 
                 textoPublicacion.setText("Publicacion: " + nombreImagen);
+                int colorId = R.color.verdellamativo;
+                int colorReal = ContextCompat.getColor(button.getContext(),colorId);
+                textoPublicacion.setBackgroundColor(colorReal);
 
                 publicacion.addView(imagenPublicacion);
                 publicacion.addView(textoPublicacion);
