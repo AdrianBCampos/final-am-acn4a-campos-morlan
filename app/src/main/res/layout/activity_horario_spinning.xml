@@ -637,8 +637,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#CECDC26D"
-            app:srcCompat="@mipmap/correo"
+            android:onClick="contacto"
 
+            app:srcCompat="@mipmap/correo"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="110dp" />
 

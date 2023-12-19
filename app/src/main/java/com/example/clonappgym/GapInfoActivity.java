@@ -27,5 +27,24 @@ public class GapInfoActivity extends AppCompatActivity {
 
 
 
+    public void obtenerIngresoQr(View v){
+        Intent intent = new Intent (getApplicationContext(), QrViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void infoApi(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ApiActivity.class);
+        startActivity(intent);
+
+    }
+    public void contacto(View v) {
+
+        Intent intent = new Intent(getApplicationContext(), ContactoActivity.class);
+
+        startActivity(intent);
+
+    }
+
 
 }

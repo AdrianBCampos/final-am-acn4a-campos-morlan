@@ -34,7 +34,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/black"
-            android:text="Subi tu selfie en el gym!!!"
+            android:text="@string/subi_tu_selfie_en_el_gym"
+            android:textAlignment="center"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
