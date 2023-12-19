@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseFirestore db;
 
     private String uid;
+
+    private static final String PREFS_NAME = "MyPrefsFile";
+    private static final String EMAIL_VERIFICATION_KEY = "email_verification";
 
     public void checkConnectionOnClick (View v){
         checkConnection();
@@ -165,8 +169,10 @@ public class MainActivity extends AppCompatActivity {
             Boolean verificado = currentUser.isEmailVerified();
             Log.i("firebase email", email);
 
+            SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+            boolean emailVerificationDone = preferences.getBoolean(EMAIL_VERIFICATION_KEY, false);
 
-            if(verificado){
+            if(verificado && !emailVerificationDone){
                 Toast.makeText(this, "Hola, tu email está verificado.", Toast.LENGTH_SHORT).show();
 
                 this.db.collection("usuarios")
@@ -189,7 +195,9 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                 );
-            }else{
+                preferences.edit().putBoolean(EMAIL_VERIFICATION_KEY, true).apply();
+            } else if (!verificado) {
+
                 String mensajeCompleto = "Hola, tu email " + email + ", necesita ser verificado. Al hacer click en 'Aceptar', recibirá un email para poder realizar esta verificación.";
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
