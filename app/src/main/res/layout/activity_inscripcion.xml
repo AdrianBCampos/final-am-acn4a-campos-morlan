@@ -51,7 +51,7 @@
                 android:id="@+id/enviarmensaje"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="270dp"
                 android:backgroundTint="@color/verdellamativo"
                 android:onClick="enviarClase"
                 android:text="Inscribirse"
@@ -64,10 +64,55 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
+                android:id="@+id/enviarmensaje2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="@color/white"
+                android:text="Dia"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/enviarmensaje3"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/white"
+                android:text="Clase"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/enviarmensaje4"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="170dp"
+                android:backgroundTint="@color/white"
+                android:text="Hora"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
                 android:id="@+id/volverBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="150dp"
+                android:layout_marginBottom="18dp"
                 android:backgroundTint="@color/black"
                 android:onClick="paginaGrilla"
                 android:text="Volver a la Grilla de Horarios"

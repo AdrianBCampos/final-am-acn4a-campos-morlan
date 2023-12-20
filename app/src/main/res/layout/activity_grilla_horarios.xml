@@ -151,7 +151,7 @@
                     android:gravity="center_vertical"
                     android:text="Spinning \n9:00 a 10:00"
                     android:textAlignment="center"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
                     tools:ignore="RtlCompat" />
 
                 <TextView
@@ -181,7 +181,7 @@
 
                     android:gravity="center_vertical"
                     android:lines="@integer/google_play_services_version"
-                    android:text="Gap \n 9:00 a 10:00"
+                    android:text="Yoga \n 9:00 a 10:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -196,7 +196,7 @@
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="Cross-Fit \n 8:00 a 10:00"
+                    android:text="Gap \n 8:00 a 10:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -204,14 +204,14 @@
                 <TextView
                     android:id="@+id/hsVier1"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_9_00_a_10_00"
+                    android:text="Spinning \n9:00 a 10:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -219,14 +219,14 @@
                 <TextView
                     android:id="@+id/hsSab1"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="2dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_9_00_a_10_00"
+                    android:text="Cross-Fit \n9:00 a 10:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -243,15 +243,15 @@
 
                 <TextView
                     android:id="@+id/hsLun2"
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_width="119dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_12_00_a_13_00"
+                    android:text="Gap \n11:00 a 12:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -259,14 +259,14 @@
                 <TextView
                     android:id="@+id/hsMar2"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_14_00_a_15_00"
+                    android:text="Spinning \n9:00 a 10:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -274,14 +274,14 @@
                 <TextView
                     android:id="@+id/hsMier2"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_12_00_a_13_00"
+                    android:text="Funcional \n11:00 a 12:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -289,14 +289,14 @@
                 <TextView
                     android:id="@+id/hsJue2"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_14_00_a_15_00"
+                    android:text="Elongacion \n10:00 a 11:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -304,14 +304,14 @@
                 <TextView
                     android:id="@+id/hsVier2"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_12_00_a_13_00"
+                    android:text="Funcional \n11:00 a 12:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -319,14 +319,14 @@
                 <TextView
                     android:id="@+id/hsSab2"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="2dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_14_00_a_15_00"
+                    android:text="Gap \n13:00 a 14:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -345,14 +345,14 @@
                 <TextView
                     android:id="@+id/hsLun3"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_18_00_a_19_00"
+                    android:text="Cross-Fit \n14:00 a 15:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -360,14 +360,14 @@
                 <TextView
                     android:id="@+id/hsMar3"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_18_00_a_19_00"
+                    android:text="Gap \n12:00 a 13:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -375,14 +375,14 @@
                 <TextView
                     android:id="@+id/hsMier3"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_18_00_a_19_00"
+                    android:text="Spinning \n14:00 a 15:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -390,14 +390,14 @@
                 <TextView
                     android:id="@+id/hsJue3"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_18_00_a_19_00"
+                    android:text="Yoga \n16:00 a 17:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -405,14 +405,14 @@
                 <TextView
                     android:id="@+id/hsVier3"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_18_00_a_19_00"
+                    android:text="Gap \n12:00 a 13:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -420,14 +420,14 @@
                 <TextView
                     android:id="@+id/hsSab3"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="2dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_18_00_a_19_00"
+                    android:text="Yoga \n15:00 a 16:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -446,14 +446,14 @@
                 <TextView
                     android:id="@+id/hsLun4"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_20_30_a_22_00"
+                    android:text="Yoga \n18:00 a 17:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -461,14 +461,14 @@
                 <TextView
                     android:id="@+id/hsMar4"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_20_00_a_21_00"
+                    android:text="Funcional \n15:00 a 16:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -476,14 +476,14 @@
                 <TextView
                     android:id="@+id/hsMier4"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_20_30_a_22_00"
+                    android:text="Pilates \n15:00 a 16:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -491,14 +491,14 @@
                 <TextView
                     android:id="@+id/hsJue4"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_20_00_a_21_00"
+                    android:text="Spinning \n17:00 a 18:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -506,14 +506,14 @@
                 <TextView
                     android:id="@+id/hsVier4"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_20_30_a_22_00"
+                    android:text="Spinning \n17:00 a 18:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -521,14 +521,14 @@
                 <TextView
                     android:id="@+id/hsSab4"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="2dp"
                     android:background="@color/turquesa"
                     android:contentDescription="@string/horario_text"
 
                     android:gravity="center_vertical"
-                    android:text="@string/_20_30_a_22_00"
+                    android:text="Spinning \n18:00 a 19:00"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     tools:ignore="RtlCompat" />
@@ -565,6 +565,7 @@
                 android:id="@+id/enviarmensaje"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="15dp"
                 android:backgroundTint="@color/verdellamativo"
                 android:onClick="paginainscripcion"
                 android:text="Inscribirse a Clases"
